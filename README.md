@@ -56,41 +56,45 @@ It is expressed as:
 ##  Code 
 ```scilab
 
-Gr = 8;
-w = 7;
-sigma = 6;  
-pmin = 1e-10;
-Gt = 9;
+Gr = 7;
+w = 8;
+sigma = 9;  
+pmin = 1e-9;
+Gt = 6;
 Pt = 0.5:0.5:100;   
 Rmax1 = (((Pt .* Gt .* Gr .* (w.^2) .* sigma) ./ (((4 * %pi).^3) .* pmin))).^(1/4);
 subplot(3,1,1);
 plot(Pt, Rmax1);
 
-Pt = 10;
+Pt = 20;
 Gt = 0.1:0.1:9;     
 Rmax2 = (((Pt .* Gt .* Gr .* (w.^2) .* sigma) ./ (((4 * %pi).^3) .* pmin))).^(1/4);
 subplot(3,1,2);
 plot(Gt, Rmax2);
 
-Gt = 8;
+Gt = 7;
 pmin = 1e-14:1e-13:1e-9;  
 Rmax3 = (((Pt .* Gt .* Gr .* (w.^2) .* sigma) ./ (((4 * %pi).^3) .* pmin))).^(1/4);
 subplot(3,1,3);
 plot(pmin, Rmax3);
 
 
+
+
 ```
 
 ## Output
 
-<img width="1914" height="1198" alt="Screenshot 2025-11-19 224222" src="https://github.com/user-attachments/assets/7899f66e-c134-4a63-9e61-98faa54bb872" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/eb11323a-acb3-44db-98ee-fb47cd45e9b4" />
+
 
 
 
 
 ## Manual Calculation
 
-![Radar Range Observation corrected ](https://github.com/user-attachments/assets/fa14955c-d700-4755-ac5d-387bbdd75901)
+![WhatsApp Image 2025-11-29 at 08 24 27_8e40de1a](https://github.com/user-attachments/assets/9e32f9df-c5f0-4418-9bd6-9b0ecf615528)
+
 
 
 
